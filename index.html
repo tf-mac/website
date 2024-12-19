@@ -1,1 +1,122 @@
-Start
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Word Cloud</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="cloud-container">
+        <!-- Central Name Node -->
+        <div class="node main-node" id="name-node" data-info="Hi! My name is Thomas McFarland, and I'm a current Junior at Cornell University. I'm looking for an internship for the Summer of 2025, so if you have an opportunity please reach out">Thomas McFarland</div>
+        <!-- Activity Nodes -->
+        <div class="node" id="activity1" data-info="Developed significant improvements to the Big Red Pep Band's management software, streamlining event attendance tracking and member-officer interactions. Designed new features to enhance usability, including better control and access to scheduling data. Delivered a robust solution that increased efficiency and member satisfaction within the organization.https://github.com/brambleshadow4/PepBandManagerWebApp/>">Pep Band Management Suite</div>
+        <div class="node" id="activity2" data-info="In my project with CombBLAS, I worked on enhancing sparse matrix multiplication routines by integrating distributed systems and GPU acceleration into a unified library. I identified inefficiencies in communication methods used in distributed computing and developed a heterogeneous communication and computation regime to address these disparities. This work required deep exploration of CUDA and MPI to achieve scalable performance improvements across various hardware configurations. The project culminated in a submission to an academic conference, showcasing the significant advancements in sparse matrix operations and their implications for high-performance computing. https://github.com/tf-mac/CombBLAS">CombBLAS</div>
+        <div class="node" id="activity3" data-info="Integrated the flight software and launch simulator into a unified application, enabling realistic testing of mission operations. Collaborated within a multidisciplinary team to ensure accurate simulation outputs and seamless system performance. Delivered results in a comprehensive report and presentation, contributing to the project's advancement in space exploration technology.">Cislunar Flight Simulator-Flight Software Integration</div>
+        <div class="node" id="activity4" data-info="I'm always looking into new and exciting projects; this winter I'll be working on teaching myself compilers">Other Projects</div>
+        <!-- Canvas for connecting lines -->
+        
+        <div class="center"><p>Scroll for more content...or click on the nodes!</p></div>
+    </div>
+        <div id="popup">
+        <span id="close-popup">&times;</span>
+        <p id="popup-content"></p>
+        </div>
+        
+        <!--<div class="scroll-content hidden"><p><img src="profile_pic.jpg" alt="Profile Pic.jpg">
+        <h1> Work Experience</h1>
+        <h2>STEM Intern, NASA</h2>
+Analyzed over 200 CubeSat proposals by leveraging machine learning, web scraping, and manual data collection to extract 100 key parameters for database integration. Designed interactive PowerBI dashboards to visualize the dataset, enabling the identification of trends and insights. Presented findings in a comprehensive end-of-internship report, highlighting critical patterns and opportunities for further research.
+
+<h2>Teaching Assistant, Cornell University</h2>
+Supported undergraduate courses, including Discrete Mathematics and Systems Programming. Responsibilities included grading, leading discussion sections, and providing one-on-one assistance during office hours. In Systems Programming, contributed to the development of an autograder, edited assignment documentation, and helped students understand advanced programming concepts.</p>
+    </div>
+    <div class="scroll-content hidden">
+        <p><h1>Education</h1>
+        <h2>Bachelor of Science in Computer Science</h2>
+Physics Minor; Chemistry External Specialization
+Expected December 2025
+
+    GPA: 3.92; Dean's List every semester
+    Relevant Coursework: Reinforcement Learning, Machine Learning, Systems Programming, Analysis of Algorithms, Embedded Systems, Inorganic Chemistry, Physical Chemistry
+
+    <h2>Master of Engineering in Computer Science</h2>
+Expected May 2026
+
+    Continuing advanced studies in computer science.</p>
+    </div>
+    <div class="scroll-content hidden">
+        <p><h1>Extracirriculars</h1>
+        <h2>Big Red Marching Band, Officer</h2>
+
+    Led initiatives to improve band operations and foster community engagement.
+    Represented the organization in performances and coordinated logistics for events.
+
+    <h2>Big Red Pep Band, Officer</h2>
+
+    Enhanced the Pep Band management software, introducing features for efficient event scheduling and attendance tracking.
+    Streamlined communication between members and officers, improving overall functionality and user experience.
+
+    <h2>Cislunar Explorers, Software Sub-team Developer</h2>
+
+    Integrated the flight software and launch simulator, creating a unified testing platform.
+    Collaborated with a multidisciplinary team to present findings through detailed reports and presentations.</p>
+    </div>
+    <!-- Contact Section -->
+    
+
+    <div id="timeline">
+        <div class="date" id="top-date"><h1>Today</h1></div>
+        <!--<div class="outer">-->
+          <div class="card">
+            <div class="info">
+              <h3 class="title">Title 1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+          </div>
+          <div class="date"><h1>2023</h1></div>
+          <div class="card">
+            <div class="info">
+              <h3 class="title">Title 2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="info">
+              <h3 class="title">Title 3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="info">
+              <h3 class="title">Title 4</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="info">
+              <h3 class="title">Title 5</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+          </div>
+          <div class="date" id="bottom-date"><h1>2004</h1></div>
+        <!--</div>-->
+
+    </div>
+
+    <div class="scroll-content">
+        <p>Please reach out to me!</p>
+        <p>Email: <a href="mailto:tfm62@cornell.edu">tfm62@cornell.edu</a></p>
+        <!-- Social Media Icons -->
+        <div class="footer-icons">
+          <a href="https://github.com/tf-mac"><img src="assets/social.png" alt="GitHub" class="icon-white"></a>
+          <a href="https://www.linkedin.com/in/tf-mac/"><img src="assets/linkedin.png" alt="LinkedIn"
+              class="icon-white"></a>
+        </div>
+      </div>
+    <a href="#" class="back-to-top" id = "back-to-top"><span>&uarr;</span></a>
+    <canvas id="connections" class="connections"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
