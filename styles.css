@@ -12,13 +12,45 @@ body {
 
 #cloud-container {
     position: relative;
-    height: 90vh; 
-    width: 80vw; 
-    margin: 5px;
+    height: 90vh;
+    width: 80vw;
+    margin: 10px;
     /*top: 10%; 
     left: 10%; 
     background-color: #FFCC00; */
 }
+
+/*#communication {
+    background-color: orange;
+}
+
+#leadership {
+    background-color: red;
+}
+
+#programming {
+    background-color: black;
+}
+
+#parallel {
+    background-color: gray;
+}
+
+#physics {
+    background-color: yellow;
+}
+
+#algorithms {
+    background-color: purple;
+}
+
+#quant {
+    background-color: lime;
+}
+
+#collaboration {
+    background-color: green;
+}*/
 
 .connections {
     position: fixed;
@@ -34,6 +66,7 @@ body {
     padding: 10px 15px;
     border-radius: 20px;
     background-color: #0078d4;
+    font-size: 2em;
     color: white;
     text-align: center;
     cursor: pointer;
@@ -47,7 +80,7 @@ body {
 
 .main-node {
     font-size: 1.5em;
-    background-color: #005bb5;
+    background-color: #079D9D;
 }
 
 /* Scroll-triggered Content Styles */
@@ -60,14 +93,16 @@ body {
     font-size: 1.2em;
     border-radius: 10px;
     opacity: 0;
-    transform: translateY(40px); /* Start below visible area */
+    /*transform: translateY(40px); /* Start below visible area */
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .scroll-content.visible {
     opacity: 1;
-    transform: translateY(0); /* Move to original position */
+    transform: translateY(0);
+    /* Move to original position */
 }
+
 #popup {
     display: none;
     position: absolute;
@@ -98,20 +133,80 @@ body {
 }
 
 .back-to-top {
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  width: 50px;
-  height: 50px;
-  background-color: #181ce0;
-  color: #FFFFFF;
-  text-align: center;
-  line-height: 50px;
-  font-size: 24px;
-  border-radius: 50%;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  z-index: 1000;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: #181ce0;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+a {
+    position: relative;
+    z-index: 1000000;
+}
+
+.to-contact {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    height: 50px;
+    background-color: red;
+    padding: 5px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box a {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.contact-box a:hover {
+    color: #0077b5;
+    /* LinkedIn blue as an example */
+}
+
+.contact-box a.github:hover {
+    color: #333;
+    /* GitHub black */
+}
+
+.contact-box a.email:hover {
+    color: #d44638;
+    /* Gmail red */
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
 }
 
 .center {
@@ -120,8 +215,8 @@ body {
 }
 
 .back-to-top:hover {
-  background-color: #161896;
-  transform: translateY(-5px);
+    background-color: #161896;
+    transform: translateY(-5px);
 }
 
 .date {
@@ -129,141 +224,148 @@ body {
     width: min-content;
     margin: auto;
     z-index: 1;
-    color: green;
-    background-color: black;
+    color: white;
+    border: 5px solid white;
+    border-radius: 1px;
+    padding: 0px 2px;
+    background-color: #577590;
 }
-/*:root {
-    --primary-color: #212121;
-    --background-color: #111;
-    --font: sans-serif;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    background: var(--background-color);
-    font-family: var(--font);
-    display: flex;
-    justify-content: center;
-  }*/
-  
-  /* Timeline Container */
-  #timeline {
+
+#timeline {
     position: relative;
     background: var(--primary-color);
     margin: 20px auto;
     padding: 20px;
     z-index: 1000;
-  }
-  
-  /* Card container */
-  .card {
+}
+
+
+.column {
+    float: left;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: #0078d4;
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 40%;
+    height: 100%;
+}
+
+.imgs {
+    width: 15vw;
+}
+
+/* Card container */
+.card {
     position: relative;
     z-index: 1000;
-    max-width: 50vw;
-  }
-  
-  /*/* setting padding based on even or odd */
-  .card:nth-child(odd) {
-    padding: 30px 0 30px 30px;
-  }
-  .card:nth-child(even) {
-    padding: 30px 30px 30px 0;
-  }
-  /* Global ::before */
-  .card::before {
-    content: "";
-    position: absolute;
-    width: 50%;
-    border: solid #0000ff;
-  }
-  
-  /* Setting the border of top, bottom, left */
-  .card:nth-child(odd)::before {
-    left: 0px;
-    top: -4.5px;
-    bottom: -4.5px;
-    border-width: 5px 0 5px 5px;
-    border-radius: 50px 0 0 50px;
-  }
-  
-  /* Setting the top and bottom to "-5px" because earlier it was out of a pixel in mobile devices */
-  @media only screen and (max-width: 400px) {
-    .card:nth-child(odd)::before {
-      top: -5px;
-      bottom: -5px;
-    }
-  }
-  
-  /* Setting the border of top, bottom, right */
-  .card:nth-child(even)::before {
-    right: 0;
-    top: 0;
-    bottom: 0;
-    border-width: 5px 5px 5px 0;
-    border-radius: 0 50px 50px 0;
-  }
-  
-  /* Removing the border if it is the first card */
-  .card:first-child::before {
-    border-top: 0;
-    border-top-left-radius: 0;
-  }
-  
-  /* Removing the border if it is the last card  and it's odd */
-  .card:last-child:nth-child(odd)::before {
-    border-bottom: 0;
-    border-bottom-left-radius: 0;
-  }
-  
-  /* Removing the border if it is the last card  and it's even */
-  .card:last-child:nth-child(even)::before {
-    border-bottom: 0;
-    border-bottom-right-radius: 0;
-  }
-  
-  /* Information about the timeline */
-  .info {
+    width: 20vw;
+    margin: auto;
+    /*max-width: 50vw;*/
+    padding: 30px;
+}
+
+.clickable {
+    padding: 0px;
+    border-style: outset;
+    margin: 80px auto;
+    border: 5px dotted red;
+}
+
+.cornell {
+    background-image: url("cornell-logo.png");
+}
+
+.info {
     display: flex;
     flex-direction: column;
     background: #f4f4f4;
     color: black;
     border-radius: 10px;
     padding: 10px;
-  }
-  
-  /* Title of the card */
-  .title {
-    color: #0000ff;
+}
+
+/* Title of the card */
+.title {
+    color: #079D9D;
     position: relative;
-  }
-  
-  /* Timeline dot  */
-  .title::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
+    text-align: center;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Grayed out background */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.overlay.show {
+    display: flex;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-content {
+    width: calc(100% - 50px);
+    /* Small margin */
+    max-width: 800px;
     background: white;
-    border-radius: 999px;
-    border: 3px solid #0000ff;
-  }
-  
-  /* text right if the card is even  */
-  .card:nth-child(even) > .info > .title {
-    text-align: right;
-  }
-  
-  /* setting dot to the left if the card is odd */
-  .card:nth-child(odd) > .info > .title::before {
-    left: -45px;
-  }
-  
-  /* setting dot to the right if the card is odd */
-  .card:nth-child(even) > .info > .title::before {
-    right: -45px;
-  }
-  
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    transform: scale(0.8);
+    animation: scaleUp 0.3s ease-in-out forwards;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: red;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    to {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.hidden {
+    display: none;
+}

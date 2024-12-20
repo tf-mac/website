@@ -9,16 +9,22 @@
 <body>
     <div id="cloud-container">
         <!-- Central Name Node -->
-        <div class="node main-node" id="name-node" data-info="Hi! My name is Thomas McFarland, and I'm a current Junior at Cornell University. I'm looking for an internship for the Summer of 2025, so if you have an opportunity please reach out">Thomas McFarland</div>
+        <div class="node main-node" id="name-node" data-info="<img src='profile_pic.jpg' alt='Profile Pic.jpg'></div><p>Hi! My name is Thomas McFarland, and I'm a current Junior at Cornell University. I'm looking for an internship for the Summer of 2025, so if you have an opportunity please reach out</p>">Thomas McFarland</div>
         <!-- Activity Nodes -->
-        <div class="node" id="activity1" data-info="Developed significant improvements to the Big Red Pep Band's management software, streamlining event attendance tracking and member-officer interactions. Designed new features to enhance usability, including better control and access to scheduling data. Delivered a robust solution that increased efficiency and member satisfaction within the organization.https://github.com/brambleshadow4/PepBandManagerWebApp/>">Pep Band Management Suite</div>
-        <div class="node" id="activity2" data-info="In my project with CombBLAS, I worked on enhancing sparse matrix multiplication routines by integrating distributed systems and GPU acceleration into a unified library. I identified inefficiencies in communication methods used in distributed computing and developed a heterogeneous communication and computation regime to address these disparities. This work required deep exploration of CUDA and MPI to achieve scalable performance improvements across various hardware configurations. The project culminated in a submission to an academic conference, showcasing the significant advancements in sparse matrix operations and their implications for high-performance computing. https://github.com/tf-mac/CombBLAS">CombBLAS</div>
-        <div class="node" id="activity3" data-info="Integrated the flight software and launch simulator into a unified application, enabling realistic testing of mission operations. Collaborated within a multidisciplinary team to ensure accurate simulation outputs and seamless system performance. Delivered results in a comprehensive report and presentation, contributing to the project's advancement in space exploration technology.">Cislunar Flight Simulator-Flight Software Integration</div>
-        <div class="node" id="activity4" data-info="I'm always looking into new and exciting projects; this winter I'll be working on teaching myself compilers">Other Projects</div>
+        <div class="node" id="communication" data-info="<h1>Communciation</h1>Communication is integral to any operation. From the wide variety of team projects I've worked on I've developed strong communication skills.">🎤</div>
+        <div class="node" id="leadership" data-info="<h1>Leadership</h1>I've been lucky to gain a wide variety of leadership experience. From leading the 200 member strong Cornell Pep Band or being manager of a sailing program involving around 150 kids each summer, I've come to understood both how to lead and how to be lead.">👑</div>
+        <div class="node" id="programming" data-info="<h1>Programming</h1>As a Computer Science Major, its been extremely important that I'm proficient in a variety of languages. These include but are not limited to C/C++, OCaml, Java, JS, and Python">🤖</div>
+        <div class="node" id="parallel" data-info="<h1>Parallel and Distributed Computing</h1>From my research, I've gained a strong proficiency in both parallel and distributed computing. I have experience in frameworks and libraries such as MPI, OpenMP, and CUDA, as well as general algorithms and techniques.">💽</div>
+        <div class="node" id="physics" data-info="<h1>Math and Physics</h1>From my minor and wide range of educational experience, I've gained a strong proficiency in a wide variety of math, physics, and chemistry. This includes Quantum Mechanics, Linear Algebra, Calculus (of all varieties), Inorganic Chemistry, Physical Chemistry, Group Theory, and many more areas">🟰</div>
+        <div class="node" id="algorithms" data-info="<h1>Algorithmic Analysis</h1>Both from my classes and experience programming, I've gained a deep understanding of algorithmic design and analysis. I'm capable not only of understanding theoretical algorithmic analysis, but also how to choose algorithms for practical scenarios.">O(n)</div>
+        <div class="node" id="quant" data-info="<h1>Quantum Mechanics and Computing</h1>From my classes in quantum mechanics, my class in quantum computing, and the quantum computing association, I've gained the capability to program using quantum algorithms, and to see their usecases.">⚛️</div>
+        <div class="node" id="collaboration" data-info="<h1>Collaboration</h1>I've worked in a number of team projects in my time at Cornell. From these, I've gained a good knowledge on how best to work with others in professional groups.">💬</div>
         <!-- Canvas for connecting lines -->
         
-        <div class="center"><p>Scroll for more content...or click on the nodes!</p></div>
+        
     </div>
+    <div class="center"><p>Scroll for more content...or click on the nodes!</p>
+    <p>In the timeline, the red dots mean you can click on an item</p></div>
         <div id="popup">
         <span id="close-popup">&times;</span>
         <p id="popup-content"></p>
@@ -66,56 +72,128 @@ Expected May 2026
     <!-- Contact Section -->
     
 
-    <div id="timeline">
+    <div id="timeline" class="scroll-content">
         <div class="date" id="top-date"><h1>Today</h1></div>
         <!--<div class="outer">-->
           <div class="card">
-            <div class="info">
-              <h3 class="title">Title 1</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <div class="info" id = "pbm">
+              <h3 class="title">Pep Band Manager</h3>
+              For the year of 2025, I'll be the manager of the Big Red Pep Band
+              <div class="hidden"><div class="column"><iframe width="300" height="487" src="https://www.youtube.com/embed/cdWoSRO2Q8A" title="Cornell Big Red Pep Band Promo Video 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
+              <div class="column">I've had the honor of being elected to be the 2025 Big Red Pep Band manager. This means that I'll be spending time organizing trips, planning out expenses, and ensuring all parties to the band have a great experience. The band has over two hundred members and plays at venues as far as Florida and Ohio. Therefore, the manager role requires a significant amount of coordination and leadership.</div></div>
             </div>
           </div>
-          <div class="date"><h1>2023</h1></div>
+        <div class="card">
+            <div class="info cornell" id="sp25">
+                <h3 class="title">Spring 2025</h3>
+                In the Spring I'll be taking Analytical Mechanics, Quantum Computing, and Mathematics of the Information Age
+            </div>
+        </div>
+        <div class="card">
+            <div class="info cornell" id="tasp25">
+                <h3 class="title">CS 4789</h3>
+                In the Spring I'll be a TA for Reinforcement Learning.
+            </div>
+        </div>
+          <div class="date"><h1>2025</h1></div>
           <div class="card">
-            <div class="info">
-              <h3 class="title">Title 2</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <div class="info cornell" id="research">
+                <h3 class="title">Research Publication</h3>
+                I submitted and was accepted to ICPE 2025.
+                <div class="hidden"><div class="column"><img class="imgs" src="https://icpe2025.spec.org/ICPE2025-banner-no-background.png"></div><div class="column">I had the fantastic opportunity to work with Professor Giulia Guidi on a research project on high performance computing. We submitted a paper on this work to ICPE 2025, and were accepted. The paper will be published with the conference proceedings.</div></div>
             </div>
-          </div>
+        </div>
           <div class="card">
-            <div class="info">
-              <h3 class="title">Title 3</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <div class="info cornell" id="tafa24">
+                <h3 class="title">CS 4789</h3>
+                In the Fall I was a TA for Systems Programming.
             </div>
-          </div>
+        </div>
           <div class="card">
-            <div class="info">
-              <h3 class="title">Title 4</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <div class="info cornell" id="fa24">
+                <h3 class="title">Fall 2024</h3>
+                In the Fall, I took Computational Complexity, Electricity and Magnetism, and a technical communication course
             </div>
-          </div>
+        </div>
+        <div class="card">
+            <div class="info cornell" id="nasa">
+                <h3 class="title">NASA Intern</h3>
+                I interned with NASA over the summer of 2024
+                <div class="hidden"><div class="column"><iframe width="300" height="487" src="https://www.youtube.com/embed/_NMJ_jE-slo" title="Wallops Flight Facility — Virtual Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="column">I had the amazing opportunity to intern for NASA over the summer of 2024. I worked with John Hudeck of the Wallops Flight Facility to process smallsat proposals and to produce a database of quantitative and qualitative data. From this, I made various dashboards which presented the information in a useable format for future mission evaluation.</div></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="info cornell" id="tasp24">
+                <h3 class="title">CS 2800</h3>
+                In the Spring I was a TA for Discrete Mathematics.
+            </div>
+        </div>
+        <div class="card">
+            <div class="info cornell" id="sp24">
+                <h3 class="title">Spring 2024</h3>
+                In the Spring I took Physical and Inorganic Chemistry, as well as Reinforcement Learning
+            </div>
+        </div>
+          <div class="date"><h1>2024</h1></div>
           <div class="card">
-            <div class="info">
-              <h3 class="title">Title 5</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <div class="info cornell" id="fa23">
+                <h3 class="title">Fall 2023</h3>
+                In the Fall, I took introduction to Analysis of Algorithms and introduction to Machine Learning, as well Physical Chemistry
             </div>
-          </div>
+        </div>
+        <div class="card">
+            <div class="info cornell" id="cislunar">
+                <h3 class="title">Cislunar</h3>
+                I was a member of the Cislunar Explorers research team.
+                <div class="hidden"><div class="column"><iframe width="300" height="487" src="https://www.youtube.com/embed/h91P55YMGSA" title="Cornell’s Quest: Make the first CubeSat to Orbit the Moon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="column">Up until its cancellation, I was a member of the software team of the Cislunar Explorers research group. During this time I worked to integrate the flight software and the flight simulatat packages so that the team could have an accurate program to experiment on in testing the flight software.</div></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="info cornell" id="sp23">
+                <h3 class="title">Spring 2023</h3>
+                In the Spring I took Linear Algebra, Functional Programming, and Systems Programming
+            </div>
+        </div>
+        <div class="date"><h1>2023</h1></div>
+        <div class="card">
+            <div class="info cornell" id="fa22">
+                <h3 class="title">Fall 2022</h3>
+                In the Fall, I took Discrete Mathematics, Object-Oriented Programming, and Multivariable Calculus
+            </div>
+        </div>
+        <div class="date"><h1>2022</h1></div>
           <div class="date" id="bottom-date"><h1>2004</h1></div>
         <!--</div>-->
 
     </div>
+    <div id="popupOverlay" class="overlay">
+        <div class="popup-content">
+            <button id="closePopup" class="close-button">X</button>
+            <div id = "popupContent"></div>
+        </div>
+    </div>
 
-    <div class="scroll-content">
-        <p>Please reach out to me!</p>
-        <p>Email: <a href="mailto:tfm62@cornell.edu">tfm62@cornell.edu</a></p>
+    <div class="contact-box" id="contact">
         <!-- Social Media Icons -->
-        <div class="footer-icons">
-          <a href="https://github.com/tf-mac"><img src="assets/social.png" alt="GitHub" class="icon-white"></a>
-          <a href="https://www.linkedin.com/in/tf-mac/"><img src="assets/linkedin.png" alt="LinkedIn"
-              class="icon-white"></a>
+        <div class="contact-box">
+          <!-- GitHub -->
+        <a href="https://github.com/tf-mac" target="_blank" class="github">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="icon">
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/in/tf-mac" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="icon">
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:tfm62@cornell.edu" class="email">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" class="icon">
+        </a>
         </div>
       </div>
     <a href="#" class="back-to-top" id = "back-to-top"><span>&uarr;</span></a>
+    <a href="#contact" class="to-contact" id = "to-contact">Contact Me!</a>
     <canvas id="connections" class="connections"></canvas>
     <script src="script.js"></script>
 </body>
